@@ -24,6 +24,7 @@ class stockControleur extends Controller
     public function addcommande(Request $request)
     {
         $addcommande = new commande;
+        
         $addcommande->client_name = $request->client_name;
         $addcommande->client_phone = $request->client_phone;
         $addcommande->reservation_date = $request->reservation_date;

@@ -11,6 +11,7 @@ Route::get('/stock_patissier', [stockControleur::class, 'stock_patissier']);
 Route::get('/stock_patissier/view/{id}', [stockControleur::class, 'viewproduct'])->name('viewproduct');
 Route::post('/stock_patissier/update/{id}', [stockControleur::class, 'updateproduct'])->name('updateproduct');
 Route::get('/stock_patissier/delete/{id}', [stockControleur::class, 'deletedproduct'])->name('deletedproduct');
+
 Route::get('/del/{$id}', [stockControleur::class, 'delstock']);
 Route::get('/users', [stockControleur::class, 'profil']);
 Route::get('/users/view/{id}', [UserController::class, 'viewuser'])->name('viewuser');
